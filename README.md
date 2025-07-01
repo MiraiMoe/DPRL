@@ -11,10 +11,10 @@ Repository derived from and extending [UAV_Navigation_DRL_AirSim](https://github
 The project introduces a Distributed Privileged Reinforcement Learning (DPRL) framework that improves robustness under partial observability by giving the critic access to privileged information while the actor learns from noisy visual input.  
 
 Our proposed DPRL framework is as followed:
-![image](https://github.com/user-attachments/assets/3a423963-4a30-4a92-89e3-18f7e269e652)
+![framework](resources/framework.png)
 
 A video demonstrating the autonomous navigation is shown below.
-![converted_video](https://github.com/user-attachments/assets/ae098247-c8f8-4232-bfc1-df68d16645f1)
+![flying](resources/converted_video.gif)
 
 Key elements:
 
