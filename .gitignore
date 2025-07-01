@@ -1,0 +1,5 @@
+# Ignore IDE settings
+.idea/
+
+# Ignore UE4 environment folder
+UE4_env/

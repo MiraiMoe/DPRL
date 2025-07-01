@@ -1,0 +1,105 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "ApiServerPort": 41452,
+  "SimMode": "Multirotor",
+  "ClockSpeed": 20,
+  "SubWindows": [
+    {"WindowID": 0, "CameraName": "FrontDepthCamera", "ImageType": 3, "Visible": true},
+    {"WindowID": 1, "CameraName": "FrontDepthCamera", "ImageType": 5, "Visible": true},
+    {"WindowID": 2, "CameraName": "FrontDepthCamera", "ImageType": 0, "Visible": true}
+    ],
+  "Vehicles": {
+    "SimpleFlight": {
+      "VehicleType": "SimpleFlight",
+      "AutoCreate": true,
+      "Parameters": {
+        "Mass": 1.0  
+      },
+      "Cameras": {
+        "FrontDepthCamera": {
+          "CaptureSettings": [
+            {
+              "ImageType": 3,
+              "Width": 320,
+              "Height": 240,
+              "FOV_Degrees": 120
+            }
+          ],
+          "X": 0.2, "Y": 0, "Z": -0.5,
+          "Pitch": 0, "Roll": 0, "Yaw": 0
+        },
+        "BackDepthCamera": {
+          "CaptureSettings": [
+            {
+              "ImageType": 3,
+              "Width": 320,
+              "Height": 240,
+              "FOV_Degrees": 90
+            }
+          ],
+          "X": -0.2, "Y": 0, "Z": -0.3,
+          "Pitch": 0, "Roll": 0, "Yaw": 180
+        },
+        "DownwardDepthCamera": {
+          "CaptureSettings": [
+            {
+              "ImageType": 5,
+              "Width": 320,
+              "Height": 240,
+              "FOV_Degrees": 90
+            }
+          ],
+          "X": 0, "Y": 0, "Z": 0.3,
+          "Pitch": -45, "Roll": 0, "Yaw": 0
+        }
+      }
+    }
+  },
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 2,
+        "Width": 320,
+        "Height": 240,
+        "FOV_Degrees": 120,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12
+      },
+      {
+        "ImageType": 0,
+        "Width": 320,
+        "Height": 240,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12
+      },
+      {
+        "ImageType": 5,
+        "Width": 320,
+        "Height": 240,
+        "FOV_Degrees": 120,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12
+      }
+    ]
+  }
+}
